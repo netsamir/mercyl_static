@@ -1,6 +1,5 @@
-admin
-js
-fonts
-css
-img
-!static
+admin/*
+js/*
+fonts/*
+css/*
+img/*
