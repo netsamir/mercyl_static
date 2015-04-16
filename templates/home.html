@@ -1,0 +1,282 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='icon' href='{% static "img/logo/web/logo.png" %}' >
+
+   <title>Mercyl S.A.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel='stylesheet' href='{% static "css/bootstrap.min.css" %}' >
+    <link rel='stylesheet' href='{% static "css/carousel.css" %}' >
+
+    <script src='{% static "js/ie-emulation-modes-warning.js" %}'></script>
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+  {% include 'navbar.html' %}
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Slide 1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Elija su máquina</h1>
+                 <p>Toma una opcion
+                </p>
+              <p><a class="btn btn-lg btn-primary" href="#products" role="button">Mas</a></p>
+             </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Slide 1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Toma un opcion sobre la maquina</h1>
+                 <p>
+                 Si no encuentra la maquina que esta buscando,
+                nostros nos encargamos de encontrala.
+                 </p>
+              <p><a class="btn btn-lg btn-primary" href="#searchit" role="button">Mas</a></p>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+          <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Slide 1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>La revisamos</h1>
+              <p>Toda nuestra maquinaria es chequeada por expertos para 
+                 seguridad de su buen estado y funcionamiento</p>
+              <p><a class="btn btn-lg btn-primary" href="#inspectit" role="button">Mas</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Slide 1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>La transportamos desde Europa</h1>
+              <p>Nos encargamos del transporte hasta Montevideo</p>
+              <p><a class="btn btn-lg btn-primary" href="#transportit" role="button">Mas</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Slide 1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>La entragamos</h1>
+              <p>Entragamos la maquina</p>
+              <p><a class="btn btn-lg btn-primary" href="#deliverit" role="button">Mas</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">prev</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">next</span>
+      </a>
+       <h2 id="products"></h2>
+    </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>EXCAVADORA</h2>
+          <p>Caterpillar, Komatsu, Hitachi, Volvo, JCB, Doosan, Liebherr, Yanmar </p>
+          <!--<p>De cadenas, de ruedas, de manutención, de cables, de demolición, araña</p>-->
+          <p><a class="btn btn-default" href="products/excavadora/" role="button">Ver <span class="badge">{{ stock.EXCAVADORA }}</span> &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>RETROEXCAVADORA </h2>
+          <p>JCB, Caterpillar, Case, Komatsu, New Holland, Terex, Volvo</p>
+          <!--<p>Rígidas, Articuladas</p>-->
+          <p><a class="btn btn-default" href="products/retroexcavadora/" role="button">Ver  <span class="badge">{{ stock.RETROEXCAVADORA }}</span> &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>MOTONIVELADORA</h2>
+          <p>Caterpillar, Komatsu, XCMG, O&K, Champion, NC, Volvo</p>
+          <p><a class="btn btn-default" href="products/motoniveladora/" role="button">Ver  <span class="badge">{{ stock.MOTONIVELADORA }}</span> &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>PALA CARGADORA</h2>
+          <p>Caterpillar, Komatsu, Volvo, JCB, Bobcat, Kawasaki, Case</p>
+          <!--<p>Cargadoras de ruedas, Cargadora sobre cadenas</p>-->
+          <p><a class="btn btn-default" href="products/palacargadora/" role="button">Ver  <span class="badge">{{ stock.PALACARGADORA }}</span> &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>COMPACTADORA</h2>
+          <p>Dynapac, Bomag, Hamm, Caterpillar, Ammann, XCMG, NC </p>
+          <!--<p>Monocilíndricos, tándem, mixtos, de neumáticos, con rodillo de patas, de basura, triciclo</p>-->
+          <p><a class="btn btn-default" href="products/compactadora/" role="button">Ver  <span class="badge">{{ stock.COMPACTADORA }}</span> &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>MINICARGADORA</h2>
+          <p>Bobcat, JCB, Caterpillar, Case, Gehl, Komatsu, New Holland</p>
+          <p><a class="btn btn-default" href="products/minicargadora/" role="button">Ver <span class="badge">{{ stock.MINICARGADORA }}</span> &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>BULLDOZER</span></h2>
+          <p>Caterpillar, Komatsu, Shantui, Shehwa, Liebherr, NC, Zoomlion</p>
+          <p><a class="btn btn-default" href="products/bulldozer/" role="button">Ver <span class="badge">{{ stock.BULLDOZER }} </span> &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>MINIEXCAVADORA</h2>
+          <p>JCB, Kubota, Yanmar, Takeuchi, Bobcat, Komatsu, Caterpillar</p>
+          <p><a class="btn btn-default" href="products/miniexcavadora/" role="button">Ver <span class="badge">{{ stock.MINIEXCAVADORA }}</span> &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>GRUA/HAULOTTE</h2>
+          <p>Tadano, Liebherr, Kato, XCMG, Potain, Grove, Kobelco</p>
+          <!--<p>Móviles, de torre, de montaje rápido, sobre cadenas, auxiliares</p>-->
+          <p><a class="btn btn-default" href="products/grua/" role="button">Ver <span class="badge">{{ stock.GRUA }}</span> &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <p class="pull-right"><a href="#myCarousel">Volver arriba</a></p>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div id="searchit" class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">El equipo
+                <span class="text-muted">En toda Europa</span></h2>
+          <p class="lead">Buscamos las maquinas que quiere</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive"
+            src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg=="
+            style="width: 500px; height: 500px;">
+        </div>
+      </div>
+
+      <p class="pull-left"><a href="#myCarousel">Volver arriba</a></p>
+
+      <hr class="featurette-divider">
+
+      <div id="inspectit" class="row featurette">
+        <div class="col-md-5">
+           <img class="featurette-image img-responsive"
+            src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg=="
+            style="width: 500px; height: 500px;">
+         </div>
+         <div class="col-md-7">
+            <h2 class="featurette-heading">La revisamos
+                <span class="text-muted">Todas maquinas.</span></h2>
+          <p class="lead">
+                 Toda nuestra maquinaria es chequeada por expertos para 
+                 seguridad de su buen estado y funcionamiento</p>
+        </div>
+      </div>
+
+      <p class="pull-right"><a href="#myCarousel">Volver arriba</a></p>
+
+      <hr class="featurette-divider">
+      <div id="transportit" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Lo transportamos
+                <span class="text-muted">Cada mes un barco.</span></h2>
+          <p class="lead">Lo importamos de Europa hasta Montevideo</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive"
+            src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg=="
+            style="width: 500px; height: 500px;">
+        </div>
+      </div>
+      <p class="pull-left"><a href="#myCarousel">Volver arriba</a></p>
+
+      <hr class="featurette-divider">
+      <div id="deliverit" class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive"
+            src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMQWRVaDwADfAGTWQlMZAAAAABJRU5ErkJggg=="
+            style="width: 500px; height: 500px;">
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Lo entragamos
+                <span class="text-muted">Hasta su casa</span></h2>
+          <p class="lead">lo entregamos</p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#myCarousel">Volver arriba</a></p>
+        <p>&copy; 2014 Mercyl, S.A. </p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src='{% static "js/bootstrap.min.js" %}'></script>
+    <script src='{% static "js/docs.min.js" %}'></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src='{% static "js/ie10-viewport-bug-workaround.js" %}'></script>
+    <script src='{% static "js/lightbox.min.js" %}'></script>
+  </body>
+</html>

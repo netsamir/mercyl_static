@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load humanize %}
+
+{% block content %}
+
+<div class="container">
+<div class='row'>
+
+{% for product in products %}
+  <div class='col-sm-4'>
+    <div class="thumbnail">
+    {% if product.productimage_set.all %}
+      {% for item in product.productimage_set.all %}
+         {% if item.featured %}
+            <a href='{{ product.get_absolute_url }}'>
+              <img class='img-thumbnail img-responsive' src='{{ MEDIA_URL }}{{ item.image }}' />
+            </a>
+         {% endif %}
+      {% endfor %}
+    {% else %}
+    <img class='featurette-image img-responsive' src='{% static "img/placeholder.svg" %}' /> 
+  {% endif %}
+
+  <div class="caption">
+  <a href='{{ product.get_absolute_url }}'>
+      <h3>{{ product.title | truncatechars:12 }} <span class="text-muted"> ({{ product.price  | intcomma }}  U$S)</span></h3></a>
+  <p>{{ product.description|truncatewords:15}}</p>
+  <p><a class="btn btn-default" href="{{ product.get_absolute_url }}" role="button">Ver &raquo;</a></p>
+  </div>
+ </div>
+</div>
+{% cycle "" "" "</div><hr/><div class='row'>" %}
+{% endfor %}
+</div> 
+</div> <!-- /container -->
+    <hr/>
+
+{% endblock%}
