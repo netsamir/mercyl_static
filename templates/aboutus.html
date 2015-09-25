@@ -4,8 +4,8 @@
 {% block content %}
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron" style="background:rgba(20,170,85,0.5)">
-    <div class="container"> 
+<!--<div class="jumbotron" style="background:rgba(20,170,85,0.5)">
+    <div class="container">
     <br/>
     <br/>
     <p><strong>Mercyl</strong> es una empresa uruguaya que se especialza en la
@@ -14,6 +14,27 @@
     equipo, los mejores precios y la mejor oportunidad para nuestros clientes.
     </p>
   </div>
+</div>-->
+
+
+<div class="container" >
+    <div class="video /*embed-responsive embed-responsive-16by9"*/>
+    <iframe /*class="embed-responsive-item"*/ width="560" height="315" src="https://www.youtube.com/embed/d5GbjFkK3_E"  allowfullscreen></iframe>
+   </div>
+
+  <!-- <div class=" video ">
+    <video controls>
+        <source src="mercyl.MP4" type=video/mp4>
+    </video>
+   </div>-->
+
+
+    <div class="presentation">
+      <p class="lead wow fadeInUp"  data-wow-delay="1s" data-wow-duration="2s"> <span>Mercyl</span> es una empresa uruguaya que se especialza en la importacion de maquinaria pesada desde Europa a todo Uruguay.<br> Para ello contamos con una amplia red de especialistas capaces de encontrar el mejor equipo,<br> los mejores precios y la mejor oportunidad para nuestros clientes. <br> <a href="contact.html">En contacto con nosotros</a> </p>
+    </div>
+    <!--<img class="wow fadeInUp"  data-wow-delay="1.5s" data-wow-duration="2s"
+        src="{% static "img/logo/web/logo.png" %}" width="180px" height="70px" alt="logo">-->
 </div>
+
 
 {% endblock %}
